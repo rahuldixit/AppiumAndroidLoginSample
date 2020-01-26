@@ -47,8 +47,8 @@ namespace GE2AutomatedTesting.PageObjects
             element.SetText(password);
             ((AndroidDriver<AndroidElement>)Driver.Session).PressKeyCode(AndroidKeyCode.Enter);
 
+            ((AndroidDriver<AndroidElement>)Driver.Session).HideKeyboard();
             Driver.Session.FindElement(_registerBtnSelector).Click();
-            //Driver.Session.FindElement(_loginSelector).Click();
             ((AndroidDriver<AndroidElement>)Driver.Session).Navigate().Back();
         }
 
