@@ -22,6 +22,7 @@ namespace GE2AutomatedTesting.StepDefinitions
             registerPage.Go();
             registerPage.RegisterUser(usr, pwd);
 
+            loginPage.Go();
             loginPage.SetEmail(usr);
             loginPage.SetPassword(pwd);
             loginPage.ClickLogin();
